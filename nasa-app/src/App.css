@@ -72,7 +72,7 @@
 @media (min-width: 100px){
   .card-bio{
     max-width: 100%;
-    margin: 8em 2em;
+    margin: 3em 2em;
     text-align: center;
   }
 }
@@ -80,12 +80,21 @@
 @media (min-width: 400px){
   .card-bio{
     max-width: 100%;
-    margin: 7em 2em;
+    margin: 5em 2em;
     text-align: center;
   }
 }
 
 @media (min-width: 800px){
+  .card-bio{
+    max-width: 100%;
+    margin: 5em 2em;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 1200px){
   .card-bio{
     max-width: 100%;
     margin: 6em 2em;
