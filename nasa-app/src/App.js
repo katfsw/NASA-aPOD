@@ -7,19 +7,24 @@ function App() {
 
   const [data, setData] = useState([])
 
-  axios
-  .get('https://api.nasa.gov/planetary/apod?api_key=kGDq1a4zRwPjocxEgwJ7tbNwuVfh7pPjNxlAdxAe')
-  .then(res => {
-    console.log("RESPONSE DATA:", res.data)
-    setData(res.data)
-  })
-  .catch(err => {
-    console.log("ERROR Fetching API:", err)
-  })
+  useEffect(()=>{
+    axios
+      .get('https://api.nasa.gov/planetary/apod?api_key=WSzgyshEH2w05Jecoz4QDuuLylIM8Z3EqZSZ8Xwr')
+      .then(res => {
+        console.log("RESPONSE DATA:", res.data)
+        setData(res.data)
+      })
+      .catch(err => {
+        console.log("ERROR Fetching API:", err)
+      })
+  },[])
+ 
 
   return (
     <div className="App">
+
         <Structure data={data}/>
+
     </div>
   );
 }
