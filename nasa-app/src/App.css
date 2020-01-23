@@ -46,7 +46,9 @@
 .card-date{
   background-color: black;
   padding: 1em;
+  opacity: 0.8;
 }
+
 
 .nav-footer{
   background-color: black;
