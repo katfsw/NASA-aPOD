@@ -23,6 +23,7 @@
   background-color: black;
   padding: 1em;
   font-style: italic;
+  opacity: 0.9;
 }
 
 .card-copyright{
@@ -45,8 +46,6 @@
 
 .card-date{
   background-color: black;
-  padding: 1em;
-  opacity: 0.8;
 }
 
 
