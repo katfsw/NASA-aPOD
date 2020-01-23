@@ -9,7 +9,7 @@ const Structure = props => {
 
             <p className="card-bio">{props.data.explanation}</p>
             
-            <p className="card-copyright">© {props.data.copyright}</p>
+            <p className="card-copyright"> Photo © {props.data.copyright}</p>
         </div>
     )
 }

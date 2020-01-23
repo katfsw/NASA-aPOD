@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 *{
@@ -11,8 +12,10 @@
   color: white;
   max-width: 100%;
   max-height: 100%;
-  background: no-repeat center center fixed; 
-
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-title {
@@ -24,22 +27,68 @@
 
 .card-copyright{
   background-color: black;
-  padding: 0.5em;
+  padding: 1em;
+  opacity: 0.8;
 }
 
 .card-bio{
-  margin: 3em;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   background-color: white;
   color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 2em;
-  padding: 1em;
+  padding: 2em;
   font-family: 'Nunito', sans-serif;
+  max-width: 30%;
+  text-align: left;
 }
 
 .card-date{
   background-color: black;
   padding: 1em;
   opacity: 0.8;
+}
+
+.nav-footer{
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+
+.nav-footer a {
+  margin: 0 1em;
+  font-size: 2.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-text {
+  font-size: 0.5em;
+  font-family: 'Nunito', sans-serif;
+  opacity: 0.3;
+  margin: 0.2em;
+}
+
+@media (min-width: 100px){
+  .card-bio{
+    max-width: 100%;
+    margin: 8em 2em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 400px){
+  .card-bio{
+    max-width: 100%;
+    margin: 7em 2em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px){
+  .card-bio{
+    max-width: 100%;
+    margin: 6em 2em;
+    text-align: center;
+  }
 }

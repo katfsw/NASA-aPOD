@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import './App.css';
 import Structure from './components/Structure'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
     <div className="App">
 
         <Structure data={data}/>
-
+        <Footer/>
     </div>
   );
 }
